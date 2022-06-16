@@ -5,6 +5,7 @@
                     <h2>{{post.title}}</h2>
                     <p>{{post.description}}</p>
                     <img :src="`{{post.image}}`" class="img-fluid w-50" alt="">
+                    <router-link class="btn btn-primary" :to="{name: 'post-detail', params: {id: post.id}}">GO</router-link>
                 </div>
             </div>
         </div>
